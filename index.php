@@ -3,13 +3,15 @@
 // fibonacci functie
 function fibonacci(){
     $x = 0;    
-    $y = 1;     
+    $y = 1;
+    // max waarde van de fibonacci loop  
+    $maxWaarde = 100;   
     // for loop die de fibonacci waarde berekent
     for($i=0;$i<=2000;$i++)    
     {   
         $z = $x + $y; 
         // als de waarde kleiner dan 100 zal deze blijven doorgaan
-        if ($z < 100) {
+        if ($z < $maxWaarde) {
         echo $z."<br />";         
         $x=$y;       
         $y=$z; 
